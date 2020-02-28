@@ -91,8 +91,8 @@ class App extends Component {
         })
     }
 
-    this.fetchContacts=(_callback)=>{
-      axios.post('https://ec2-100-27-2-255.compute-1.amazonaws.com/api/search', {
+    this.fetchContacts=()=>{
+      axios.post('http://ec2-100-27-2-255.compute-1.amazonaws.com/api/search', {
         "selector": {
           "@assetType": "contact"
         }
